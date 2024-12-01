@@ -7,14 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50114065-cd30-44e4-86aa-148b467b24f6" name="Changes" comment="day 1: part 1">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day1/1a.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day1/input/1a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day1/input/sample.txt" afterDir="false" />
+    <list default="true" id="50114065-cd30-44e4-86aa-148b467b24f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/day1/1b.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day1/day1.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/day1.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/day1/findDistance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/day1/findDistance.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day1/input/1a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/day1/input/day1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/day1.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/day1.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +57,14 @@
     "Jest.Day 1:.executor": "Run",
     "Jest.Day 1:.parses the input file into two correct arrays.executor": "Run",
     "Node.js.1a.ts.executor": "Run",
+    "Node.js.1b.ts.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "23.3.0",
     "javascript.nodejs.core.library.typings.version": "22.10.1",
+    "last_opened_file_path": "C:/Users/Beornwulf/WebstormProjects/AoC2024/src/day1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,13 +81,16 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Beornwulf\WebstormProjects\AoC2024\src\day1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Beornwulf\WebstormProjects\AoC2024\test" />
       <recent name="C:\Users\Beornwulf\WebstormProjects\AoC2024\src\day1\input" />
       <recent name="C:\Users\Beornwulf\WebstormProjects\AoC2024" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.All Tests">
+  <component name="RunManager" selected="Node.js.1b.ts">
     <configuration name="Day 1:" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -116,14 +119,19 @@
     <configuration name="1a.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/day1/1a.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/src/day1">
       <method v="2" />
     </configuration>
+    <configuration name="1b.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/day1/1b.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/src/day1">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Jest.All Tests" />
       <item itemvalue="Jest.Day 1:" />
       <item itemvalue="Jest.Day 1:.parses the input file into two correct arrays" />
       <item itemvalue="Node.js.1a.ts" />
+      <item itemvalue="Node.js.1b.ts" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.1b.ts" />
         <item itemvalue="Jest.Day 1:.parses the input file into two correct arrays" />
         <item itemvalue="Jest.Day 1:" />
         <item itemvalue="Node.js.1a.ts" />
@@ -147,7 +155,7 @@
       <updated>1733055011942</updated>
       <workItem from="1733055012882" duration="158000" />
       <workItem from="1733055185424" duration="7450000" />
-      <workItem from="1733064022068" duration="6978000" />
+      <workItem from="1733064022068" duration="7715000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <option name="closed" value="true" />
@@ -165,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733067366102</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="day 1: part 1 complete">
+      <option name="closed" value="true" />
+      <created>1733071093286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733071093286</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +205,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="day 1: pre-testing" />
     <MESSAGE value="initial setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial setup" />
+    <MESSAGE value="day 1: part 1 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 1: part 1 complete" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
