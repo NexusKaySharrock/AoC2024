@@ -1,7 +1,9 @@
+import stylistic from '@stylistic/eslint-plugin';
+
 export default [
     {
         rules: {
-            semi: "error",
+            '@stylistic/semi': ["error", "always"],
             "prefer-const": "error"
         },
         overrides: [
@@ -12,6 +14,9 @@ export default [
                     "jest/globals": true
                 }
             }
-        ]
+        ],
+        plugins: {
+            '@stylistic': stylistic
+        },
     }
 ];
