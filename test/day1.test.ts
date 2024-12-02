@@ -1,4 +1,4 @@
-import {findDistance, findSimilarity, parseInput} from '../src/day1/findDistance';
+import {findDistance, findSimilarity, parseInput} from '../src/day1/day1';
 
 const listA: number[] = [3, 4, 2, 1, 3, 3];
 const listB: number[] = [4, 3, 5, 3, 9, 3];

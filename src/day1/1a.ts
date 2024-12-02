@@ -1,3 +1,3 @@
-import {findDistance, parseInput} from './findDistance';
+import {findDistance, parseInput} from './day1';
 
-console.log(findDistance(...parseInput('1a') as [[number], [number]]));
+console.log(findDistance(...parseInput('day1') as [[number], [number]]));
