@@ -21,12 +21,8 @@ function countSafe(matrix: number[][]): number {
                 }
             }
         })
-        if (leaps === 0) {
-            if (decreases === 0 && increases === report.length - 1) {
-                safeReports++
-            } else if (increases === 0 && decreases === report.length - 1) {
-                safeReports++
-            }
+        if (leaps === 0 && (decreases === 0 && increases === report.length - 1 || increases === 0 && decreases === report.length - 1)) {
+            safeReports++
         }
     })
 
