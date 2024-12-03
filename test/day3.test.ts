@@ -1,4 +1,4 @@
-import {process, parseInput} from "../src/day3/day3";
+import {process, parseInput, processWithConditionals} from "../src/day3/day3";
 
 const sample = "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))";
 
@@ -8,5 +8,8 @@ describe('Day 3:', () => {
     });
     test('correctly cleans and processes the input', () => {
         expect(process(sample)).toBe(161);
+    });
+    test('correctly cleans and processes the input with conditionals', () => {
+        expect(processWithConditionals(parseInput('sample2'))).toBe(48);
     });
 });
