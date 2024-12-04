@@ -97,3 +97,50 @@ export function search(matrix: string[][]): number {
     })
     return count;
 }
+
+export function search2(matrix: string[][]): number {
+    let count = 0;
+
+    matrix.forEach((row, i) => {
+        if (0 < i && i < matrix.length - 1) {
+            row.forEach((column, j) => {
+                if (0 < j && j < row.length - 1 && column === 'A') {
+                    if (
+                        matrix[i-1][j-1] === 'S' &&
+                        matrix[i-1][j+1] === 'S' &&
+                        matrix[i+1][j+1] === 'M' &&
+                        matrix[i+1][j-1] === 'M'
+                    ) {
+                        count++
+                    }
+                    if (
+                        matrix[i-1][j-1] === 'M' &&
+                        matrix[i-1][j+1] === 'S' &&
+                        matrix[i+1][j+1] === 'S' &&
+                        matrix[i+1][j-1] === 'M'
+                    ) {
+                        count++
+                    }
+                    if (
+                        matrix[i-1][j-1] === 'M' &&
+                        matrix[i-1][j+1] === 'M' &&
+                        matrix[i+1][j+1] === 'S' &&
+                        matrix[i+1][j-1] === 'S'
+                    ) {
+                        count++
+                    }
+                    if (
+                        matrix[i-1][j-1] === 'S' &&
+                        matrix[i-1][j+1] === 'M' &&
+                        matrix[i+1][j+1] === 'M' &&
+                        matrix[i+1][j-1] === 'S'
+                    ) {
+                        count++
+                    }
+                }
+            })
+        }
+    })
+
+    return count;
+}
