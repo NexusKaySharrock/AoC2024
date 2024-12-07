@@ -85,3 +85,9 @@ export function traverse(map: string[][]): number {
 function printMap(map: string[][]):void {
     console.log(map.map(row => row.join('')).join('\n'))
 }
+
+export function obstruct(map: string[][]): number {
+    //log guard actions in string/array - location/action combination
+    // check for repeated loops
+    return 0;
+}
